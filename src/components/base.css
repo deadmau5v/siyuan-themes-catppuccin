@@ -1,7 +1,8 @@
 /* Map SiYuan variables to Catppuccin Mocha colors */
 :root {
   /* Font stack: prioritizing Source Han Sans for CJK characters */
-  --b3-font-family: "Source Han Sans", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  --b3-font-family:
+    "Source Han Sans", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
 
   /* Base colors: background and surface */
   --b3-theme-background: var(--ctp-mocha-base);
@@ -54,13 +55,25 @@
 }
 
 /* Component style overrides: Dock panels (left, right, bottom) */
-.layout__dockl, .layout__dockr, .layout__dockb {
+.layout__dockl,
+.layout__dockr,
+.layout__dockb {
   background-color: var(--ctp-mocha-mantle) !important;
 }
 
 /* Component style overrides: Toolbar */
 .toolbar {
   background-color: var(--ctp-mocha-crust) !important;
+  color: var(--ctp-mocha-text) !important;
+}
+
+.toolbar__item {
+  color: var(--ctp-mocha-subtext0) !important;
+}
+
+.toolbar__item:hover {
+  background-color: var(--ctp-mocha-surface1) !important;
+  color: var(--ctp-mocha-text) !important;
 }
 
 /* Flat design: Remove shadows from sidebar and floating panels */
@@ -69,6 +82,15 @@
 .layout__dockb,
 .layout--float {
   box-shadow: none !important;
+  border-color: var(--ctp-mocha-surface0) !important;
+}
+
+.layout-tab-bar {
+  background-color: var(--ctp-mocha-crust) !important;
+}
+
+.item--focus {
+  background-color: var(--ctp-mocha-surface0) !important;
 }
 
 /* Flat design: Remove shadows from list items */
@@ -119,4 +141,135 @@ body,
   background-color: var(--ctp-mocha-surface0) !important;
   color: var(--ctp-mocha-text) !important;
   border: 1px solid var(--ctp-mocha-surface1) !important;
+}
+
+/* Icon styling */
+.protyle-icon {
+  height: auto;
+}
+
+.protyle-icon > svg {
+  width: 14px;
+  height: 14px;
+  padding: 2px;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] svg {
+  background-color: transparent !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] text,
+.protyle-wysiwyg [data-subtype="mermaid"] .label,
+.protyle-wysiwyg [data-subtype="mermaid"] .node label,
+.protyle-wysiwyg [data-subtype="mermaid"] .edgeLabel,
+.protyle-wysiwyg [data-subtype="mermaid"] .loopText,
+.protyle-wysiwyg [data-subtype="mermaid"] .messageText,
+.protyle-wysiwyg [data-subtype="mermaid"] .noteText,
+.protyle-wysiwyg [data-subtype="mermaid"] .taskText,
+.protyle-wysiwyg [data-subtype="mermaid"] .sectionTitle,
+.protyle-wysiwyg [data-subtype="mermaid"] .classText {
+  fill: var(--ctp-mocha-text) !important;
+  color: var(--ctp-mocha-text) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .node rect,
+.protyle-wysiwyg [data-subtype="mermaid"] .node circle,
+.protyle-wysiwyg [data-subtype="mermaid"] .node ellipse,
+.protyle-wysiwyg [data-subtype="mermaid"] .node polygon,
+.protyle-wysiwyg [data-subtype="mermaid"] .node path,
+.protyle-wysiwyg [data-subtype="mermaid"] .cluster rect {
+  fill: var(--ctp-mocha-surface0) !important;
+  stroke: var(--ctp-mocha-lavender) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .actor {
+  stroke: var(--ctp-mocha-lavender) !important;
+  fill: var(--ctp-mocha-surface0) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .actor-line {
+  stroke: var(--ctp-mocha-overlay0) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .messageLine0,
+.protyle-wysiwyg [data-subtype="mermaid"] .messageLine1,
+.protyle-wysiwyg [data-subtype="mermaid"] .flowchart-link {
+  stroke: var(--ctp-mocha-text) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] #arrowhead,
+.protyle-wysiwyg [data-subtype="mermaid"] .arrowheadPath,
+.protyle-wysiwyg [data-subtype="mermaid"] .marker.arrowhead,
+.protyle-wysiwyg [data-subtype="mermaid"] .marker.main {
+  fill: var(--ctp-mocha-text) !important;
+  stroke: var(--ctp-mocha-text) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .loopLine {
+  stroke: var(--ctp-mocha-lavender) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .labelBox {
+  stroke: var(--ctp-mocha-lavender) !important;
+  fill: var(--ctp-mocha-surface0) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .note {
+  fill: var(--ctp-mocha-yellow) !important;
+  stroke: var(--ctp-mocha-peach) !important;
+  fill-opacity: 0.3;
+}
+
+/* Gantt Chart */
+.protyle-wysiwyg [data-subtype="mermaid"] .task {
+  stroke: var(--ctp-mocha-surface2) !important;
+  fill: var(--ctp-mocha-surface1) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .task0,
+.protyle-wysiwyg [data-subtype="mermaid"] .task1,
+.protyle-wysiwyg [data-subtype="mermaid"] .task2,
+.protyle-wysiwyg [data-subtype="mermaid"] .task3 {
+  fill: var(--ctp-mocha-surface1) !important;
+  stroke: var(--ctp-mocha-surface2) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .active0,
+.protyle-wysiwyg [data-subtype="mermaid"] .active1,
+.protyle-wysiwyg [data-subtype="mermaid"] .active2,
+.protyle-wysiwyg [data-subtype="mermaid"] .active3 {
+  fill: var(--ctp-mocha-mauve) !important;
+  stroke: var(--ctp-mocha-lavender) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .done0,
+.protyle-wysiwyg [data-subtype="mermaid"] .done1,
+.protyle-wysiwyg [data-subtype="mermaid"] .done2,
+.protyle-wysiwyg [data-subtype="mermaid"] .done3 {
+  fill: var(--ctp-mocha-green) !important;
+  stroke: var(--ctp-mocha-teal) !important;
+  fill-opacity: 0.5;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .crit0,
+.protyle-wysiwyg [data-subtype="mermaid"] .crit1,
+.protyle-wysiwyg [data-subtype="mermaid"] .crit2,
+.protyle-wysiwyg [data-subtype="mermaid"] .crit3 {
+  fill: var(--ctp-mocha-red) !important;
+  stroke: var(--ctp-mocha-maroon) !important;
+}
+
+/* Class Diagram */
+.protyle-wysiwyg [data-subtype="mermaid"] .classBreadcrumb {
+  fill: var(--ctp-mocha-mauve) !important;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .edgeTerminals {
+  fill: var(--ctp-mocha-text) !important;
+}
+
+/* User Journey */
+.protyle-wysiwyg [data-subtype="mermaid"] .face {
+  fill: var(--ctp-mocha-yellow) !important;
+  stroke: var(--ctp-mocha-peach) !important;
 }
