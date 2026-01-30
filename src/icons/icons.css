@@ -1,0 +1,24 @@
+/* Catppuccin style icon color definitions */
+.fn__svg, .svg {
+  color: var(--ctp-mocha-subtext1);
+  transition: color 0.2s ease-in-out;
+}
+
+.fn__svg:hover, .svg:hover {
+  color: var(--ctp-mocha-mauve);
+}
+
+/* Folder icon specific colors */
+[data-type="navigation"] .b3-list-item__icon {
+  color: var(--ctp-mocha-blue);
+}
+
+/* Document icon specific colors */
+[data-type="navigation"] .b3-list-item__text {
+  color: var(--ctp-mocha-text);
+}
+
+/* Status bar icons */
+#status .status__item {
+  color: var(--ctp-mocha-overlay2);
+}

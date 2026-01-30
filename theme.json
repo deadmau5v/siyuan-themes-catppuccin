@@ -1,0 +1,7 @@
+{
+  "name": "Catppuccin",
+  "author": "deadmau5v",
+  "url": "https://github.com/catppuccin/siyuan",
+  "version": "1.0.0",
+  "modes": ["dark", "light"]
+}

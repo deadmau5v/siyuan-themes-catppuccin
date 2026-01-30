@@ -1,0 +1,35 @@
+{
+  "name": "siyuan",
+  "version": "1.0.0",
+  "description": "Soothing pastel theme for SiYuan Note",
+  "main": "theme.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadmau5v/siyuan-catppuccin-theme.git"
+  },
+  "keywords": [
+    "siyuan",
+    "theme",
+    "catppuccin",
+    "pastel",
+    "dark",
+    "light"
+  ],
+  "author": "deadmau5v",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deadmau5v/siyuan-catppuccin-theme/issues"
+  },
+  "homepage": "https://github.com/deadmau5v/siyuan-catppuccin-theme#readme",
+  "devDependencies": {
+    "stylelint": "^16.10.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+    "stylelint-order": "^6.0.4"
+  }
+}

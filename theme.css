@@ -1,0 +1,53 @@
+@import "src/flavors/mocha.css";
+@import "src/flavors/latte.css";
+@import "src/components/base.css";
+@import "src/icons/icons.css";
+
+/* Default to Mocha (dark mode) */
+:root {
+  color-scheme: dark;
+}
+
+/* Light mode - triggered when [data-theme-mode="light"] is set on body */
+[data-theme-mode="light"] {
+  color-scheme: light;
+  /* Remap variables to Latte flavor */
+  --b3-theme-background: var(--ctp-latte-base);
+  --b3-theme-surface: var(--ctp-latte-surface0);
+  --b3-theme-on-background: var(--ctp-latte-text);
+  --b3-theme-primary: var(--ctp-latte-mauve);
+  --b3-theme-on-primary: var(--ctp-latte-base);
+  --b3-theme-secondary: var(--ctp-latte-blue);
+  --b3-theme-on-secondary: var(--ctp-latte-base);
+  --b3-theme-error: var(--ctp-latte-red);
+  --b3-theme-surface-lighter: var(--ctp-latte-surface1);
+  --b3-theme-surface-light: var(--ctp-latte-surface2);
+  --b3-scroll-color: var(--ctp-latte-surface2);
+  --b3-list-hover: var(--ctp-latte-surface1);
+}
+
+/* Light mode: toolbar styling */
+[data-theme-mode="light"] .toolbar {
+  background-color: var(--ctp-latte-crust) !important;
+}
+
+/* Light mode: dock panels styling */
+[data-theme-mode="light"] .layout__dockl,
+[data-theme-mode="light"] .layout__dockr,
+[data-theme-mode="light"] .layout__dockb {
+  background-color: var(--ctp-latte-mantle) !important;
+}
+
+/* Light mode: editor background */
+[data-theme-mode="light"] .protyle-background {
+  background-color: var(--ctp-latte-mantle) !important;
+}
+
+/* Light mode: switch component styling */
+[data-theme-mode="light"] .b3-switch::after {
+  background-color: var(--ctp-latte-base) !important;
+}
+
+[data-theme-mode="light"] .b3-switch:checked::after {
+  background-color: var(--ctp-latte-base) !important;
+}
