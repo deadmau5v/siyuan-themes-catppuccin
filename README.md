@@ -12,18 +12,18 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/siyuan/main/assets/screenshot.webp" alt="Example of the Catppuccin theme for SiYuan"/>
+  <img src="./assets/screenshot.webp" alt="Example of the Catppuccin theme for SiYuan"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/siyuan/main/assets/latte.webp" alt="Preview of Latte theme"/>
+<img src="./assets/latte.webp" alt="Preview of Latte theme"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/siyuan/main/assets/mocha.webp" alt="Preview of Mocha theme"/>
+<img src="./assets/mocha.webp" alt="Preview of Mocha theme"/>
 </details>
 
 ## About
