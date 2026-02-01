@@ -1,22 +1,23 @@
 /* SiYuan Toolbar Styles - Outermost layer (Darkest) */
-.toolbar {
-  background-color: var(--ctp-mocha-crust);
-  color: var(--ctp-mocha-text);
-  border: none; /* Remove bottom border */
+.toolbar,
+body.body--blur .toolbar {
+  background-color: var(--ctp-crust);
+  color: var(--b3-theme-on-background);
+  border: none;
   box-shadow: none;
 }
 
+#barWorkspace {
+  background-color: var(--ctp-mantle);
+}
+
 .toolbar__item {
-  color: var(--ctp-mocha-subtext0);
+  color: var(--b3-theme-on-background);
+  opacity: 0.8;
 }
 
 .toolbar__item:hover {
-  background-color: var(--ctp-mocha-surface0);
-  color: var(--ctp-mocha-text);
-}
-
-/* Light mode overrides */
-[data-theme-mode="light"] .toolbar {
-  background-color: var(--ctp-latte-crust);
-  border: none;
+  background-color: var(--b3-theme-surface);
+  color: var(--b3-theme-on-background);
+  opacity: 1;
 }

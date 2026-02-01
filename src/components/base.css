@@ -1,37 +1,66 @@
-/* SiYuan Design Tokens Mapping (Catppuccin Mocha) */
+/* SiYuan Design Tokens Mapping - Catppuccin Base */
 :root {
   /* Font stack */
   --b3-font-family:
     "Source Han Sans", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
 
+  /* Catppuccin Flavor Aliases (Default to Mocha) */
+  --ctp-rosewater: var(--ctp-mocha-rosewater);
+  --ctp-flamingo: var(--ctp-mocha-flamingo);
+  --ctp-pink: var(--ctp-mocha-pink);
+  --ctp-mauve: var(--ctp-mocha-mauve);
+  --ctp-red: var(--ctp-mocha-red);
+  --ctp-maroon: var(--ctp-mocha-maroon);
+  --ctp-peach: var(--ctp-mocha-peach);
+  --ctp-yellow: var(--ctp-mocha-yellow);
+  --ctp-green: var(--ctp-mocha-green);
+  --ctp-teal: var(--ctp-mocha-teal);
+  --ctp-sky: var(--ctp-mocha-sky);
+  --ctp-sapphire: var(--ctp-mocha-sapphire);
+  --ctp-blue: var(--ctp-mocha-blue);
+  --ctp-lavender: var(--ctp-mocha-lavender);
+  --ctp-text: var(--ctp-mocha-text);
+  --ctp-subtext1: var(--ctp-mocha-subtext1);
+  --ctp-subtext0: var(--ctp-mocha-subtext0);
+  --ctp-overlay2: var(--ctp-mocha-overlay2);
+  --ctp-overlay1: var(--ctp-mocha-overlay1);
+  --ctp-overlay0: var(--ctp-mocha-overlay0);
+  --ctp-surface2: var(--ctp-mocha-surface2);
+  --ctp-surface1: var(--ctp-mocha-surface1);
+  --ctp-surface0: var(--ctp-mocha-surface0);
+  --ctp-base: var(--ctp-mocha-base);
+  --ctp-mantle: var(--ctp-mocha-mantle);
+  --ctp-crust: var(--ctp-mocha-crust);
+
+  /* SiYuan Design Tokens Mapping */
   /* Base colors: background and surface */
-  --b3-theme-background: var(--ctp-mocha-base);
-  --b3-theme-surface: var(--ctp-mocha-surface0);
-  --b3-theme-on-background: var(--ctp-mocha-text);
+  --b3-theme-background: var(--ctp-base);
+  --b3-theme-surface: var(--ctp-surface0);
+  --b3-theme-on-background: var(--ctp-text);
 
   /* Primary color: highlights */
-  --b3-theme-primary: var(--ctp-mocha-mauve);
-  --b3-theme-on-primary: var(--ctp-mocha-base);
+  --b3-theme-primary: var(--ctp-mauve);
+  --b3-theme-on-primary: var(--ctp-base);
   --b3-theme-primary-light: rgba(203, 166, 247, 0.5);
   --b3-theme-primary-lighter: rgba(203, 166, 247, 0.2);
 
   /* Secondary color */
-  --b3-theme-secondary: var(--ctp-mocha-blue);
-  --b3-theme-on-secondary: var(--ctp-mocha-base);
+  --b3-theme-secondary: var(--ctp-blue);
+  --b3-theme-on-secondary: var(--ctp-base);
 
   /* Error color */
-  --b3-theme-error: var(--ctp-mocha-red);
+  --b3-theme-error: var(--ctp-red);
 
   /* Surface variants */
-  --b3-theme-surface-lighter: var(--ctp-mocha-surface1);
-  --b3-theme-surface-light: var(--ctp-mocha-surface2);
+  --b3-theme-surface-lighter: var(--ctp-surface1);
+  --b3-theme-surface-light: var(--ctp-surface2);
 
   /* Scrollbar color */
-  --b3-scroll-color: var(--ctp-mocha-surface2);
+  --b3-scroll-color: var(--ctp-surface2);
 
   /* List structure */
-  --b3-list-hover: var(--ctp-mocha-surface1);
-  --b3-list-icon-hover: var(--ctp-mocha-text);
+  --b3-list-hover: var(--ctp-surface1);
+  --b3-list-icon-hover: var(--ctp-text);
 }
 
 /* Icon base scaling */

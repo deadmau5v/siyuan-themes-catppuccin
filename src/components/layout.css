@@ -23,19 +23,19 @@
 }
 
 .layout__resize:hover::after {
-  background-color: var(--ctp-mocha-surface0);
+  background-color: var(--b3-theme-surface);
 }
 
 /* Outermost Background: Area behind the tabs */
 .layout__center {
-  background-color: var(--ctp-mocha-mantle);
+  background-color: var(--ctp-mantle);
 }
 
 /* 1. Outermost Framework (Darkest - Crust) */
 #dockLeft,
 #dockRight,
 .layout__dockb {
-  background-color: var(--ctp-mocha-crust);
+  background-color: var(--ctp-crust);
 }
 
 /* 2. Secondary Layer (Darker - Mantle) */
@@ -43,12 +43,12 @@
 .layout__dockr,
 .file-tree,
 .layout-tab-container {
-  background-color: var(--ctp-mocha-mantle);
+  background-color: var(--ctp-mantle);
 }
 
 /* Tab bar transition layer */
 .layout-tab-bar {
-  background-color: var(--ctp-mocha-mantle);
+  background-color: var(--ctp-mantle);
 }
 
 .item--focus::after {
@@ -62,26 +62,15 @@
 
 /* Focus state for tabs should be slightly lighter (Surface0) */
 .item--focus {
-  background-color: var(--ctp-mocha-base);
+  background-color: var(--b3-theme-background);
 }
 
 /* 3. Innermost Content Area (Lightest - Base) */
 .protyle-wysiwyg {
-  background-color: var(--ctp-mocha-base);
+  background-color: var(--b3-theme-background);
 }
 
 /* Editor background */
 .protyle-background {
-  background-color: var(--ctp-mocha-base);
-}
-
-/* --- Light Mode Overrides (Latte) --- */
-[data-theme-mode="light"] #dockLeft,
-[data-theme-mode="light"] #dockRight {
-  background-color: var(--ctp-latte-crust);
-}
-
-[data-theme-mode="light"] .layout__dockl,
-[data-theme-mode="light"] .layout__dockr {
-  background-color: var(--ctp-latte-mantle);
+  background-color: var(--b3-theme-background);
 }

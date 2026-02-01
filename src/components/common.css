@@ -25,18 +25,9 @@ body,
 
 /* Switch component */
 .b3-switch::after {
-  background-color: var(--ctp-mocha-base);
+  background-color: var(--b3-theme-background);
 }
 
 .b3-switch:checked::after {
-  background-color: var(--ctp-mocha-base);
-}
-
-/* Light mode overrides */
-[data-theme-mode="light"] .b3-switch::after {
-  background-color: var(--ctp-latte-base);
-}
-
-[data-theme-mode="light"] .b3-switch:checked::after {
-  background-color: var(--ctp-latte-base);
+  background-color: var(--b3-theme-background);
 }

@@ -14,25 +14,44 @@
 
 @import "src/icons/icons.css";
 
-/* Default to Mocha (dark mode) */
+/* Default to mocha (dark) logic handled in base.css */
 :root {
   color-scheme: dark;
 }
 
-/* Light mode logic handled via body[data-theme-mode="light"] in separate modules */
+/* Light mode overrides (Latte) */
 [data-theme-mode="light"] {
   color-scheme: light;
-  /* Remap primary variables for Latte */
-  --b3-theme-background: var(--ctp-latte-base);
-  --b3-theme-surface: var(--ctp-latte-surface0);
-  --b3-theme-on-background: var(--ctp-latte-text);
-  --b3-theme-primary: var(--ctp-latte-mauve);
-  --b3-theme-on-primary: var(--ctp-latte-base);
-  --b3-theme-secondary: var(--ctp-latte-blue);
-  --b3-theme-on-secondary: var(--ctp-latte-base);
-  --b3-theme-error: var(--ctp-latte-red);
-  --b3-theme-surface-lighter: var(--ctp-latte-surface1);
-  --b3-theme-surface-light: var(--ctp-latte-surface2);
-  --b3-scroll-color: var(--ctp-latte-surface2);
-  --b3-list-hover: var(--ctp-latte-surface1);
+
+  /* Remap Catppuccin Aliases to Latte */
+  --ctp-rosewater: var(--ctp-latte-rosewater);
+  --ctp-flamingo: var(--ctp-latte-flamingo);
+  --ctp-pink: var(--ctp-latte-pink);
+  --ctp-mauve: var(--ctp-latte-mauve);
+  --ctp-red: var(--ctp-latte-red);
+  --ctp-maroon: var(--ctp-latte-maroon);
+  --ctp-peach: var(--ctp-latte-peach);
+  --ctp-yellow: var(--ctp-latte-yellow);
+  --ctp-green: var(--ctp-latte-green);
+  --ctp-teal: var(--ctp-latte-teal);
+  --ctp-sky: var(--ctp-latte-sky);
+  --ctp-sapphire: var(--ctp-latte-sapphire);
+  --ctp-blue: var(--ctp-latte-blue);
+  --ctp-lavender: var(--ctp-latte-lavender);
+  --ctp-text: var(--ctp-latte-text);
+  --ctp-subtext1: var(--ctp-latte-subtext1);
+  --ctp-subtext0: var(--ctp-latte-subtext0);
+  --ctp-overlay2: var(--ctp-latte-overlay2);
+  --ctp-overlay1: var(--ctp-latte-overlay1);
+  --ctp-overlay0: var(--ctp-latte-overlay0);
+  --ctp-surface2: var(--ctp-latte-surface2);
+  --ctp-surface1: var(--ctp-latte-surface1);
+  --ctp-surface0: var(--ctp-latte-surface0);
+  --ctp-base: var(--ctp-latte-base);
+  --ctp-mantle: var(--ctp-latte-mantle);
+  --ctp-crust: var(--ctp-latte-crust);
+
+  /* Re-map b3 variables that might need specific attention */
+  --b3-theme-primary-light: rgba(136, 57, 239, 0.5); /* mauve in rgba */
+  --b3-theme-primary-lighter: rgba(136, 57, 239, 0.2);
 }
